@@ -1,5 +1,4 @@
 import { Outlet, Link } from "react-router-dom";
-import Penis from "./routes/Penis"
 
 
 export default function App() {
@@ -16,7 +15,6 @@ export default function App() {
         <Link to="/expenses">Expenses</Link>
       </nav>
       <Outlet />
-      <Penis/>
     </div>
   );
 }

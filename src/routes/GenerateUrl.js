@@ -2,29 +2,40 @@
 export default function GenerateUrl(){
     const YourUrl = () => {
         alert("Url Created");
+        let GeneratedUrl = document.getElementById("GeneratedUrl")
+        let Copyable = document.getElementById("Copyable")
+        let NewUrl = "http://localhost:3000/Predictions/"+document.getElementById("ChanelInput").value
         console.log(document.getElementById("ChanelInput").value)
-        document.getElementById("GeneratedUrl").innerHTML = "www.Runigud.com/Predictions/"+document.getElementById("ChanelInput").value
+        GeneratedUrl.innerHTML = NewUrl
+        GeneratedUrl.href = "http://localhost:3000/Predictions/"+document.getElementById("ChanelInput").value
+        GeneratedUrl.style.pointerEvents = "all"
+        GeneratedUrl.style.width = NewUrl.length*9+"px"
+        Copyable.style.width = NewUrl.length*9+"px"
+        document.getElementById("me").style.right = "0px"
+        
       }
 
       const Copy = () =>  {
-        /* Get the text field */
-        var copyText = "www.Runigud.com/Predictions/"+document.getElementById("ChanelInput").value
-      
-        /* Select the text field */
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /* For mobile devices */
-      
-        /* Copy the text inside the text field */
-        navigator.clipboard.writeText(copyText.value);
-        
-        /* Alert the copied text */
-        alert("Copied the text: " + copyText.value);
+        let copyText = document.getElementById("GeneratedUrl").value;
+        navigator.clipboard.writeText(copyText).then(() => {
+            // Alert the user that the action took place.
+            // Nobody likes hidden stuff being done under the hood!
+            
+            document.getElementById("me").innerHTML = "Copied!"
+
+        });
       }
     
       return (
-        <div><label>Your Channel Name: </label>  <input id="ChanelInput"></input><button onClick={YourUrl}>Generate Url</button>
-        <a href={document.getElementById("ChanelInput").value} target="_blank"><h1 id="GeneratedUrl"></h1></a>
+        <div id="InputField">
+          
+          <form action="#">
+          <h2>Type in your channel id below</h2>  <input id="ChanelInput"></input><button onClick={YourUrl}>Generate Url</button>
+          </form>
+         <div id="Copyable">
+         <textarea readOnly href="google" target="_blank" id="GeneratedUrl" onClick={Copy} placeholder="Your Url will appear here!"></textarea>
+         <div id="me">Copy </div>
+         </div>
         </div>
-        
       );
     }

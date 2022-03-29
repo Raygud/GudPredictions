@@ -5,8 +5,8 @@ Web site that dynamicly creates Browser urls for The "GudPredictions" Twitch bot
  _______________________________________________
 
 Libraries:
-<br/>[cheerio.js](https://cheerio.js.org/)
-<br/>[node.js](https://www.chartjs.org/)
+<br/>[tmi.js](https://tmijs.com/)
+<br/>[chart.js](https://www.chartjs.org/)
 
 #Npm installs
 <br/> ```npm i tmi.js --save```

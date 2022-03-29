@@ -2,6 +2,7 @@
 
 # GudPredictions
 Web site that dynamicly creates Browser urls for The "GudPredictions" Twitch bot
+![GudPredictions in action](https://github.com/Raygud/GudPredictions/blob/main/277176984_4963350867088086_3789456981045879338_n.jpeg?raw=true)
  _______________________________________________
 
 Libraries:

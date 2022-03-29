@@ -29,9 +29,9 @@ export default function GenerateUrl(){
       return (
         <div id="InputField">
           
-          <form action="#">
+          <div>
           <h2>Type in your channel id below</h2>  <input id="ChanelInput"></input><button onClick={YourUrl}>Generate Url</button>
-          </form>
+          </div>
          <div id="Copyable">
          <textarea readOnly href="google" target="_blank" id="GeneratedUrl" onClick={Copy} placeholder="Your Url will appear here!"></textarea>
          <div id="me">Copy </div>

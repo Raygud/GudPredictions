@@ -1,8 +1,8 @@
 
 
 # GudPredictions
-Web site that dynamicly creates Browser urls for The "GudPredictions" Twitch bot.
-GudPredictions is a Chart based prediction bot/visual as seen below
+Web site that dynamicly creates Browser urls for The "GudPredictions" Twitch bot.<br/>
+GudPredictions is a Chart based prediction bot/visual as seen below<br/><br/>
 ![GudPredictions in action](https://github.com/Raygud/GudPredictions/blob/main/277176984_4963350867088086_3789456981045879338_n.jpeg?raw=true)
  _______________________________________________
 

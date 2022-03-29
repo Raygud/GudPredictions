@@ -41,3 +41,6 @@ const tmi = require('tmi.js');
 client.connect();                             // And finaly connect too client
 ```
 
+her we initialize our connection too the twitch server and respective channel, we use ours bots login details so that we can post messages in twitch chat.
+this code only runs after you have requested a unique URL so we use that url too deduct your channel name.
+
